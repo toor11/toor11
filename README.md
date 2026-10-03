@@ -18,7 +18,9 @@ i run garuda + hyprland on a GTX 1050 with 2GB of VRAM in 2026. so everything i 
 
 🚗 **[carlisting](https://github.com/toor11/carlisting)** — car marketplace in albanian + english. mobile.de filters, auth.js, mongo, vercel blob. because my side projects also need side projects.
 
-also floating around: a cyber blog, a legal-support LLM thing, a BTC predictor, and an X bot with memory. some are private because they're embarrassed.
+🛡️ **[cyber.murati.net](https://cyber.murati.net)** — my threat-intel blog. i read CVEs, breaches and ransomware reports so you don't have to. static html/css/js on cloudflare workers, no build step, deploys on push. weekly pipeline scrapes trusted intel blogs, enriches thin ones with NVD / exploit-db / vendor advisories, then rewrites everything into original prose — CVE numbers and IOCs preserved verbatim, never copy-pasted. comes with a CVE tracker + RSS for fellow paranoids. latest: AI agents SQL-injecting US gov sites by accident, shinyhunters getting hunted, keio hotels vs ransomware.
+
+also floating around: a legal-support LLM thing, a BTC predictor, and an X bot with memory. some are private because they're embarrassed.
 
 ---
 

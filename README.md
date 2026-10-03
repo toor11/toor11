@@ -2,7 +2,7 @@
 
 `toor` like `root`, just backwards. pretty much describes my debugging process.
 
-i run garuda + hyprland on a GTX 1050 with 2GB of VRAM in 2026. so everything i build has to be offline, tiny, and slightly unreasonable — because it has no other choice.
+i run garuda + hyprland on a GTX 1050 with 2GB of VRAM in 2026. so everything i build has to be offline, tiny, and slightly unreasonable because it has no other choice.
 
 ---
 

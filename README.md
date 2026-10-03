@@ -1,56 +1,38 @@
-### Juri — I build systems that run offline, in production, on real constraints
+### hi, i'm juri (toor11)
 
-Consulting open: **AI devtools + trading/quant engines + Next.js SaaS MVPs.**
-Measured latency, reproducible backtests, deployable code — not demos.
+`toor` like `root`, just backwards. pretty much describes my debugging process.
 
-📧 Contact: open an issue on any repo or find me via [murati.net](https://www.murati.net)
-💼 Currently: booking freelance — MVP scoping → build → deploy → handoff, weekly demos
+i run garuda + hyprland on a GTX 1050 with 2GB of VRAM in 2026. so everything i build has to be offline, tiny, and slightly unreasonable — because it has no other choice.
 
 ---
 
-### What investors get
+**what i'm actually doing here:**
 
-- **Shipped, not slides:** voice-to-code on 2GB VRAM, backtest engine with full provenance, live marketplace
-- **Risk-honest:** every trading repo documents what can still lose money
-- **Full-stack ownership:** Linux/systemd → Python/TS → DB → Vercel/Proxmox
+🎙️ **[opencode-voice](https://github.com/toor11/opencode-voice)** — i got tired of typing, so now i yell at my editor. hold a key, talk, release. whisper transcribes locally, piper talks back. one inference per rant, ~0.5s. no cloud, no subscription, no one listening except my GPU fan.
 
-### Featured builds
+📉 **[IlanTrio](https://github.com/toor11/IlanTrio)** — took a 2011 martingale forex bot that was guaranteed to nuke your account and taught it manners. added the stop-losses the original author labeled *"THESE PARAMETERS DO WORK!!"* (they did not). now it refuses to start on accounts it knows it will kill. my most responsible parenting moment.
 
-| Repo | What | Why it matters |
-|---|---|---|
-| [opencode-voice](https://github.com/toor11/opencode-voice) | Push-to-talk for OpenCode, 100% local STT/TTS | 1 inference at STOP, VAD-gated, ~0.5s on GTX 1050 2GB |
-| [Stock_bot](https://github.com/toor11/Stock_bot) | Universal Portfolio research, offline | data → strategies → portfolio → costs → backtest chain, no live-trading footguns |
-| [carlisting](https://github.com/toor11/carlisting) | mobile.de-style marketplace, SQ/EN | Next.js 15, Auth.js, Mongo Atlas, Vercel Blob, seed in 1 cmd |
-| [IlanTrio](https://github.com/toor11/IlanTrio) | Martingale grid EA + capital protection | Caps tail risk: 141-pip buffer vs 27-pip original on $100 cent |
-| [ufo](https://github.com/toor11/ufo) | war.gov declassified docs bulk downloader | ★5, data pipeline for bulk PDFs |
-| [AI_prompts_DB](https://github.com/toor11/AI_prompts_DB) | Curated LLM prompts | Practical prompt library for agent work |
+🛸 **[ufo](https://github.com/toor11/ufo)** — bulk downloader for declassified UAP docs from war.gov. my most-starred repo. apparently aliens > AI devtools. i accept this.
 
-Private work I can demo on call: cyber blog platform, legal-support LLM system, BTC price predictor, X posting agent with memory.
+📊 **Stock_bot** — implemented Cover's Universal Portfolio to beat buy-and-hold BTC. result: 8.48x vs 14.37x buy-and-hold. so i documented exactly why i lost, with graphs. science!
+
+🚗 **[carlisting](https://github.com/toor11/carlisting)** — car marketplace in albanian + english. mobile.de filters, auth.js, mongo, vercel blob. because my side projects also need side projects.
+
+also floating around: a cyber blog, a legal-support LLM thing, a BTC predictor, and an X bot with memory. some are private because they're embarrassed.
 
 ---
 
-### For developers
+**forks are my browser tabs.** trufflehog, trivy, hashcat, nmap, proxmox stuff — i fork it, poke it, break it on my homelab, forget to star it. the stuff above is the stuff i actually wrote.
 
-```bash
-# voice tool — offline Whisper + Piper
-cd opencode-voice && uv venv .venv && uv pip install faster-whisper piper-tts soundfile onnxruntime
-
-# marketplace — Next.js 15 + TS
-cd carlisting && npm install && cp .env.example .env.local && npm run dev
-
-# quant — reproducible research, tests must pass
-cd Stock_bot && uv venv .venv && uv pip install -e ".[dev]" && pytest
+```
+# if you want to run my junk:
+git clone https://github.com/toor11/opencode-voice && cd opencode-voice
+# good luck, bring a microphone and low expectations
 ```
 
-- Every original repo: README with architecture, tests, MIT, no `eval` on untrusted input
-- Stack: `Python` `TypeScript` `Next.js 15` `FastAPI` `Postgres/Mongo` `Docker` `MQL4/5` `Whisper/Piper` `Hyprland/systemd`
+---
 
 ![stats](https://github-readme-stats.vercel.app/api?username=toor11&show_icons=true&hide_border=true)
 ![langs](https://github-readme-stats.vercel.app/api/top-langs/?username=toor11&layout=compact&hide_border=true)
 
----
-
-### Security / infra background
-
-Active in secret scanning, vuln scanning, net recon, Proxmox homelab, Linux Surface kernels.
-Forks are labs — originals above are products.
+*psst — i occasionally help people ship things for money. open an issue and say hi first.*
